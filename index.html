@@ -3,41 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEVENTEEN</title>
-    <link href="styles.css" rel="stylesheet" type="text/css">
+    <title>HOME</title>
     <link rel="icon" href="favicon.ico">
-    <!-- esta página no usa tailwind -->
-</head>
+    <link href="withTailWindVer.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    /* Agrega estilo para el contenedor de íconos pegajosos */
+    .sticky-icons {
+        position: sticky;
+        bottom: 0;
+        background-color: bg-gray-100; /* Puedes cambiar el color de fondo si lo deseas */
+        padding: 10px; /* Agrega un poco de espacio alrededor de los íconos */
+    }
+
+    /* Agrega estilo para hacer los elementos del menú pegajosos */
+    .sticky-container {
+        position: sticky;
+        top: 0;
+        background-color: bg-gray-100; /* Puedes cambiar el color de fondo si lo deseas */
+        padding: 10px; /* Agrega un poco de espacio alrededor de los íconos */
+    }
+    .sticky-icons a {
+        margin: 0 5px; 
+    }
+
+
+    </style>
+
 </head>
 <body>
-    <div class="titulo"> <!-- modificar el margen entre el título y el primer párrafo (tengo que agregar clase en el div de abajo) -->
-        <h1> SEVENTEEN </h1>
+    <div class="flex">
+        <div class="w-64 bg-gray-100 text-gray-900 sticky-center flex flex-col justify-between">
+            <div class="sticky-container flex flex-col items-center justify-center mt-[18px]">
+               <img src="logosvt.png" alt="logo" height="243px" width="188"> <br>
+               <a href="index.html"> <p class="m-1 font-mono text-center text-lg hover:font-bold">HOME</p></a>
+               <a href="aboutThem.html"> <p class="m-1 font-mono text-center text-lg hover:font-bold">SOBRE ELLOS</p></a>
+               <a href="musica.html"> <p class="m-1 font-mono text-center text-lg hover:font-bold">MÚSICA</p></a>
+               <p class="m-1 font-mono text-center text-lg hover:font-bold"> TOURS </p>
+               <p class="m-1 font-mono text-center text-lg hover:font-bold"> PREMIOS </p>
+               <p class="m-1 font-mono text-center text-lg hover:font-bold"> REGISTRARSE </p>
+            </div>
+  
+            <div class="sticky-icons flex justify-center pb-4">
+               <!-- Reemplaza estos span por tus íconos -->
+               <a href="https://www.instagram.com/saythename_17/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i></a> <!-- Ejemplo de ícono -->
+               <a href="https://open.spotify.com/intl-es/artist/7nqOGRxlXj7N2JYbgNEjYH" target="_blank"><i class="fa-brands fa-spotify"></i></a> <!-- Ejemplo de ícono -->
+               <a href="https://soundcloud.com/pledis_seventeen" target="_blank"><i class="fa-brands fa-soundcloud"></i></a> <!-- Ejemplo de ícono -->
+               <!-- Agrega más íconos según sea necesario -->
+           </div>
+        </div>
+        <div class="flex-1 flex flex-col justify-center items-center mt-[5px] mx-auto">        <!-- Contenido principal -->
+
+            <div class="flex-1 flex-col justify-center mt-[5px]">
+                <p class="m-1 font-sans text-center text-2xl font-style: italic leading-none">Say the name!</p> 
+                <p class="m-1 font-serif text-center text-7xl leading-none">SEVENTEEN</p> 
+                <p class="m-1 font-sans text-center text-3xl font-style: italic leading-none underline decoration-dotted">Bienvenidos</p>
+                <br>
+                <img src="https://phinf.wevpstatic.net/MjAyMjA3MjBfODIg/MDAxNjU4MzA3NzI4MDk3.iBRCBQYxYCFA0Ynk_hTdWyC5L6c3WzKxSVzyUYdKZ74g.fR_tuK1esYvBdbAVz46L7SPU6vURd6krfeSd_af15Vgg.GIF/d_a12Ud018svc1m1alc8k3gy6i_dtb7s.gif?type=w1414" alt="gifGrupal" height="900" width="600" class="h-auto mx-auto mt-[9px] mb-[10px]" >
+                <br>
+                <p class="m-1 font-mono text-center text-lg mt-[10px] w-[800px] mx-auto text-gray-800"> Primer fanpage oficial dirigida por fans, para fans y futuros carats. Mantenemos al día la información correspondiente al grupo de K-POP, <span class="font-style: italic"> SEVENTEEN. </span> </p>
+                <p class="m-1 font-mono text-center text-lg mt-[10px] w-[800px] mx-auto text-gray-800"> Dirigido por AQ. Todos los derechos reservados. </p>
+            </div>
+
+              
+            </div>    
+        </div>
+      
+
+
+
     </div>
-
-    <div class="primer_parr">
-        <p>SEVENTEEN es el grupo surcoreano de kpop debutado el 26 de mayo del 2015. SEVENTEEN está integrado por 13 miembros: 9 coreano, 2 chinos y 2 estadounidenses. Su nombre se debe a que los trece miembros compenen distintas unidades dedicadas a diferentes aspectos del grupo; como una unidad destinada al HipHop, otra al baile y otra a lo vocal, siendo estas más sus integrantes y su fandom (como uno solo) suman el número diecisiete. </p>
-    </div>
-
-    <div class="imagenes">
-        <img src="svt.jpg" alt="fotoGrupal" width="500" height="326"> 
-    </div>
-
-    <div> 
-        <p> Su fandom recibe el nombre de <span><strong>CARAT</strong></span> porque los fans harán que ellos brillen como un diamante. Carat (Quilate en español) es la medida de las piedras preciosas, a mayor cantidad más pura y valiosa es la piedra.</p>
-    </div>
-    <br>
-
-    <div>
-        <p> El grupo cuenta con un líder principal (S.Coups) y dos líderes secundarios (Hoshi y Woozi) que juntos conforman una subunidad no oficial de los líderes. </p> 
-        <br>
-        <p>El primero, además de ser el líder de todo el grupo, también es líder de la unidad de HipHop compuesta por Vernon, Mingyu y Wonwoo. Woozi es el líder de la unidad Vocal de Seventeen, compuesta junto a Jeonghan, Joshua, Seungkwan y DK. Kwon Soonyoung, o mejor conocido como Hoshi, es el tercer líder que corresponde a la unidad de baile con Jun, The8 y Dino. Así es como los trece miembros de SEVENTEEN se distribuyen en el grupo.</p>
-    </div>
-    <br>
-
-    <div> 
-        <p id="btn" ><a class="boton" href="musica.html"> SIGUIENTE </a> </p>
-    </div>
-
-
+    
 </body>
 </html>
