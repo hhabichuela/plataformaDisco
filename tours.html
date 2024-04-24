@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEVENTEEN</title>
+    <link href="withTailWindVer.css" rel="stylesheet" type="text/css"> 
+    <link rel="icon" href="favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <style>
+      
+        .sticky-icons {
+        position: sticky;
+        bottom: 0;
+        background-color: bg-gray-100; 
+        padding: 10px; 
+        }
+
+
+        .sticky-container {
+            position: sticky;
+            top: 0;
+            background-color: bg-gray-100; 
+            padding: 10px; 
+        }
+        .sticky-icons a {
+            margin: 0 5px; 
+        }
+        :root {
+          --ancho-div: 900px;
+         --alto-div: 500px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flex">
+
+      <div class="w-64 bg-gray-100 text-gray-900 sticky-center flex flex-col justify-between">
+          <div class="sticky-container flex flex-col items-center justify-center mt-[18px]">
+             <img src="logosvt.png" alt="logo" height="243px" width="188"> <br>
+             <a href="index.html"> <p class="m-1 font-mono text-center text-lg hover:font-bold">HOME</p></a>
+             <a href="aboutThem.html"> <p class="m-1 font-mono text-center text-lg hover:font-bold">SOBRE ELLOS</p></a>
+             <a href="musica.html"> <p class="m-1 font-mono text-center text-lg hover:font-bold">MÚSICA</p></a>
+             <a href="tours.html"><p class="m-1 font-mono text-center text-lg hover:font-bold"> TOURS </p> </a>
+             <p class="m-1 font-mono text-center text-lg hover:font-bold"> PREMIOS </p>
+             <a href="signUp.html"><p class="m-1 font-mono text-center text-lg hover:font-bold"> REGISTRARSE </p> </a>
+          </div>
+
+          <div class="sticky-icons flex justify-center pb-4">
+
+             <a href="https://www.instagram.com/saythename_17/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i></a> 
+             <a href="https://open.spotify.com/intl-es/artist/7nqOGRxlXj7N2JYbgNEjYH" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+             <a href="https://soundcloud.com/pledis_seventeen" target="_blank"><i class="fa-brands fa-soundcloud"></i></a> 
+             <a href="https://www.youtube.com/@pledis17" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+
+         </div>
+      </div>
+                 
+      <div class="flex flex-1 items-center h-screen mx-auto relative"> <!-- saldudo -->
+        <div class="absolute top-1 right-1">
+             <i class="fa-solid fa-ticket fa-rotate-by" style="--fa-rotate-angle: 127deg;"></i> <span id="welcome" class="m-3 font-mono"> </span>
+             <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+             
+        </div>
+        
+          
+
+        <div class="bg-white bg-opacity-50 rounded-lg p-4 mx-auto justify-center" style="width: var(--ancho-div); height: var(--alto-div);">
+
+          <p class="m-3 font-mono text-lg text-center"> FOLLOW TOUR - 2024 </p>
+
+            <div class="flex">
+
+                
+                <div class="w-3/4">
+                    <p class="m-7 font-mono text-lg text-center"> Séoul, estadio - 29/02 </p> <br>
+                    <p class="m-7 font-mono text-lg text-center"> Tokyo, dome - 15/03 </p>
+                </div>
+
+                <div class="w-3/4">
+
+                    <button onclick="getTickets()" class="m-7 mt-2 font-mono text-lg text-center border border-gray-300 hover:border-2 p-4 tickets">Comprar Ticket </button>
+                    <button onclick="getTickets()" class="m-7 mt-3 font-mono text-lg text-center border border-gray-300 hover:border-2 p-4 tickets">Comprar Ticket</button>
+
+<!--                     <p class="m-3 font-mono text-lg text-center"> comprar ticket </p> <br>
+                    <p class="m-3 font-mono text-lg text-center"> comprar ticket </p> <br> -->
+
+                                   
+                </div> 
+
+              </div>
+            
+            
+            
+              <script src=myScript.js></script>
+
+        </div>
+    </div>
+</html>
