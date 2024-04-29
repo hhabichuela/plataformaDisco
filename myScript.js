@@ -6,6 +6,31 @@ while (nombre.length < 3 ) {
 const span = document.querySelector('#welcome');
 span.textContent = "Hola, " + nombre;
 
+let objTickets = {
+    California: "59",
+    Tokyo: "80",
+    Seoul: "5",
+    Shangai: "0",
+}
+function deshabilitar(){
+    for (let place in objTickets) {
+        if (objTickets[place] == 0) {
+            let button = document.querySelectorAll('.tickets');
+            button.forEach(button => {
+                let place = button.getAttribute('data-place');
+                if (objTickets[place] == 0) {
+                    button.textContent = "Sold Out";
+                    button.disabled = true;
+                    button.style.backgroundColor = 'red';
+                    button.style.marginTop= '10px';
+                    button.style.marginLeft= '90px';
+                }
+            });
+        }
+    }
+}
+
+
 
 let edad = prompt("¿Cuántos años tenes?");
 if (edad < 18) {
@@ -15,28 +40,24 @@ if (edad < 18) {
         tickets[i].textContent = "Prohibido.";
         tickets[i].disabled = true;
         tickets[i].style.backgroundColor = 'red';
-        tickets[i].style.marginTop= '30px';
+        tickets[i].style.marginTop= '10px';
         tickets[i].style.marginLeft= '90px';
 
-        
     }
 
 } else {
     
-  function getTickets() {
-    swal("¡Comprado!", "Ya tenes tu ticket para el concierto.", "success");
+  function getTickets(place) {
+    if (objTickets[place] > 0) {
+        objTickets[place]--;
+        swal("¡Comprado!", "Ya tenes tu ticket para el concierto de " + place + ".", "success");
+    } else if (objTickets[place] == 0) {
+        deshabilitar();
+        swal('Lo sentimos', 'Los tickets para ' + place + ' están agotados.', 'warning');
     }
+
+    }
+
 }
 
 
-
-
-
-
-/* let nombre;
-let edad;
-
-edad = prompt("¿Cual es tu edad?");
-nombre = prompt("¿Y tu nombre?");
-
-alert("Bienvenid@ " + nombre + " de " + edad + " años. " + " ¿Desea comprar algún ticket? Presione aceptar para continuar." ); */
