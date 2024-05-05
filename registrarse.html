@@ -7,9 +7,6 @@
     <link rel="icon" href="favicon.ico">
     <link href="withTailWindVer.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
 
@@ -67,29 +64,22 @@
             <div class="bg-white bg-opacity-50 rounded-lg p-4 mx-auto" style="width: var(--ancho-div); height: var(--alto-div);">
               <div class="text-center">
                 <p class="m-3 font-mono text-lg">REGISTRARSE COMO CARAT OFICIAL</p>
-                <form action="POST" action="https://formspree.io/f/xwkgrdlo" class="text-center justify-center" name="registro" onsubmit="return validarDos()">
-                  <label for="usuario">Ingrese un nombre de usuario:</label>
-                  <input type="text" class="ml-[4px] p-2 border rounded mb-[10px]" name="usuario_reg" id="usuario" required>
-              
-                  <label for="correo">Ingrese un correo electrónico:</label>
-                  <input type="email" class="ml-[4px] p-2 border rounded mb-[10px]" name="mail_reg" id="correo" required>
-              
-                  <label for="contra">Ingrese una contraseña:</label>
-                  <input type="password" class="ml-[4px] p-2 border rounded mb-[10px]" name="contra_reg" id="contra" required>
+                <form action="POST" action="https://formspree.io/f/xwkgrdlo" class="text-center justify-center">
+                  <label for="nombre">Ingrese un nombre de usuario:</label> <input type="text" class="ml-[4px] p-2 border rounded mb-[10px]" name="usuario_reg" required>
+                  <label for="mail"> Ingrese un correo electrónico: </label> <input type="email" class="ml-[4px] p-2 border rounded mb-[10px]" name="mail_reg" required>
+                  <label for="contra"> Ingrese una contraseña: </label> <input type="password" class="ml-[4px] p-2 border rounded mb-[10px]" name="contra_reg" required>
                   <br>
-              
-                  <label for="byc">Acepta nuestras bases y condiciones</label>
-                  <input type="checkbox" class="ml-[4px] p-2 border rounded mb-[2px]" name="byc" required>
+                  <label for="byc"> Acepta nuestras bases y condiciones </label> <input type="checkbox" class="ml-[4px] p-2 border rounded mb-[2px]" name="byc" required>
                   <br>
                   <br>
-              
-                  <input type="submit" class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
-              </form>
+
+                  <input type="submit" class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"> <br>
+                </form>
                 <br>
               </div>
             </div>
         </div>
     
-    <script src="validarInput.js"></script>
+    
 </body>
 </html>
