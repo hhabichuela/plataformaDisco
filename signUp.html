@@ -6,7 +6,9 @@
     <title>Ingresá</title>
     <link rel="icon" href="favicon.ico">
     <link href="withTailWindVer.css" rel="stylesheet" type="text/css">
+
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
 
@@ -45,7 +47,7 @@
                <a href="index.html"> <p class="m-1 font-mono text-center text-lg hover:font-bold">HOME</p></a>
                <a href="aboutThem.html"> <p class="m-1 font-mono text-center text-lg hover:font-bold">SOBRE ELLOS</p></a>
                <a href="musica.html"> <p class="m-1 font-mono text-center text-lg hover:font-bold">MÚSICA</p></a>
-               <a href="tours.html"><p class="m-3 font-mono text-lg text-center"> comprar ticket </p> <br> </a>
+               <a href="tours.html"><p class="m-1 font-mono text-center text-lg hover:font-bold"> TOURS </p> </a>
                
                <p class="m-1 font-mono text-center text-lg hover:font-bold"> PREMIOS </p>
                <a href="signUp.html"><p class="m-1 font-mono text-center text-lg hover:font-bold"> REGISTRARSE </p> </a>
@@ -64,9 +66,9 @@
             <div class="bg-white bg-opacity-50 rounded-lg p-4 mx-auto" style="width: var(--ancho-div); height: var(--alto-div);">
               <div class="text-center">
                 <p class="m-3 font-mono text-lg">INICIAR SESIÓN</p>
-                <form action="POST" action="https://formspree.io/f/xwkgrdlo" class="text-center justify-center">
-                  <input type="text" class="w-full p-2 border rounded mb-[10px]" name="usuario_mail" required placeholder="Nombre de usuario o correo.">
-                  <input type="password" class="w-full p-2 border rounded mb-[10px]" name="contra" required placeholder="Contraseña." >
+                <form action="POST" action="https://formspree.io/f/xwkgrdlo" class="text-center justify-center" name="iniciar" id="formLog" onsubmit="return validar()">
+                  <input type="text" class="w-full p-2 border rounded mb-[10px]" name="usuario_mail" id="nomail" required placeholder="Nombre de usuario o correo.">
+                  <input type="password" class="w-full p-2 border rounded mb-[10px]" name="contra" id="contra" required placeholder="Contraseña." >
                   <label for="bot">Aseguro no ser un robot </label><input type="checkbox" class=" ml-[5px] p-2 border rounded mb-[10px]" name="bot" required> <br>
                   <input type="submit" class="mt-[5px] bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"> <br>
                 </form>
@@ -75,6 +77,7 @@
             </div>
         </div>
     
+        <script src="login.js"></script>
     
 </body>
 </html>
